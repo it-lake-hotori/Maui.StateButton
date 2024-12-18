@@ -170,7 +170,7 @@ public partial class StateButton : Border
 
 	internal void InvokePressed()
 	{
-		if (!IsEnabled)
+		if(!IsEnabled)
 		{
 			return;
 		}
@@ -183,12 +183,12 @@ public partial class StateButton : Border
 
 	internal void InvokeReleased()
 	{
-		if (!IsEnabled)
+		if(!IsEnabled)
 		{
 			return;
 		}
 
-		if (State.Equals(ButtonState.NotPressed))
+		if(State.Equals(ButtonState.NotPressed))
 		{
 			return;
 		}
@@ -201,7 +201,7 @@ public partial class StateButton : Border
 
 	internal void InvokeClicked()
 	{
-		if (!IsEnabled)
+		if(!IsEnabled)
 		{
 			return;
 		}
